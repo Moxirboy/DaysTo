@@ -1,3 +1,3 @@
-module awesomeProject4
+module DaysTo
 
 go 1.20
