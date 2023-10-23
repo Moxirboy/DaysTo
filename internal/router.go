@@ -1,8 +1,8 @@
 package internal
 
 import (
-	"awesomeProject4/internal/handle"
-	"awesomeProject4/internal/middleware"
+	"DaysTo/internal/handle"
+	"DaysTo/internal/middleware"
 	"net/http"
 )
 
