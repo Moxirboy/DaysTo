@@ -1,29 +1,34 @@
-# DaysTo
-Days to 2025 Calculator
-This is a simple Go program that calculates the number of days remaining until January 1, 2025, when provided with a valid token as a URL query parameter.
+# Days to 
 
-Prerequisites
-Go (Golang) must be installed on your system.
-A valid token (replace your_secret_token with your actual token).
-Usage
-Clone or download this repository to your local machine.
+**Days to 2025 Calculator** is a simple Go program that calculates the number of days remaining until January 1, 2025, when provided with any token as a URL query parameter.
 
-Replace your_secret_token in the code with your actual token.
+## Prerequisites
 
-Open a terminal and navigate to the directory containing the code.
+Before you begin, make sure you have the following requirements:
 
-Run the Go program using the following command:
+- Go (Golang) must be installed on your system.
 
-shell
-Copy code
-go run main.go
-The server will start and listen on port 8080.
+## Usage
 
-To calculate the days remaining until January 1, 2025, access the following URL in your web browser or use a tool like cURL:
+1. Clone or download this repository to your local machine.
 
-bash
-Copy code
-http://localhost:8080/?token=your_token
-Replace your_secret_token with your actual token.
+2. Open a terminal and navigate to the directory containing the code.
 
-If a valid token is provided, the server will respond with the number of days remaining. If the token is missing or incorrect, a 403 Forbidden response will be returned.
+3. Run the Go program using the following command:
+
+    ```shell
+    go run cmd/main.go
+    ```
+
+4. The server will start and listen on port 8080.
+
+5. To calculate the days remaining until January 1, 2025, access the following URL in your web browser :
+
+    ```bash
+    http://localhost:8080/?token=your_token
+    ```
+
+    Replace `your_token` with any token.
+
+6. If a token is provided, the server will respond with the number of days remaining. If the token is missing, a 403 Forbidden response will be returned.
+
