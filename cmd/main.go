@@ -1,7 +1,7 @@
 package main
 
 import (
-	"awesomeProject4/internal"
+	"DaysTo/internal"
 	"net/http"
 )
 
