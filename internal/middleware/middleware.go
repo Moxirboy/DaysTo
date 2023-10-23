@@ -1,7 +1,7 @@
 package middleware
 
 import (
-	_const "awesomeProject4/internal/const"
+	_const "DaysTo/internal/const"
 	"fmt"
 	"net/http"
 )
