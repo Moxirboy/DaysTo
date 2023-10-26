@@ -22,13 +22,14 @@ Before you begin, make sure you have the following requirements:
 
 4. The server will start and listen on port 8080.
 
-5. To calculate the days remaining until January 1, 2025, access the following URL in your web browser :
+5. To calculate the days remaining until January 1, 2025, write this command :
 
     ```bash
-    http://localhost:8080/?token=your_token
+    curl -H "token: <YOUR_TOKEN>  " http://localhost:8080
+
     ```
 
-    Replace `your_token` with any token.
+    Replace `YOUR_TOKEN` with any token.
 
 6. If a token is provided, the server will respond with the number of days remaining. If the token is missing, a 403 Forbidden response will be returned.
 
