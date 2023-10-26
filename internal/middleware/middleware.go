@@ -8,7 +8,7 @@ import (
 
 func Middleware(next http.HandlerFunc) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
-		token := r.URL.Query().Get("token")
+		token := r.Header.Get("token")
 
 		if token == "" {
 			w.WriteHeader(http.StatusForbidden)
